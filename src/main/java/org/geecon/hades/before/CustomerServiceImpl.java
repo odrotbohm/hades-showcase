@@ -11,6 +11,8 @@ import org.springframework.stereotype.Repository;
 
 
 /**
+ * Plain JPA implementation of {@link CustomerService}.
+ * 
  * @author Oliver Gierke
  */
 @Repository

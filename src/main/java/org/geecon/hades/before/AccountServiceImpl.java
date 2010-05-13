@@ -12,6 +12,8 @@ import org.springframework.stereotype.Repository;
 
 
 /**
+ * Plain JPA implementation of {@link AccountService}.
+ * 
  * @author Oliver Gierke
  */
 @Repository
@@ -56,5 +58,4 @@ class AccountServiceImpl implements AccountService {
 
         return query.getResultList();
     }
-
 }

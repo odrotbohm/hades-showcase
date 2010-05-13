@@ -40,9 +40,6 @@ public class Account {
     }
 
 
-    /**
-     * @return the expiryDate
-     */
     public Date getExpiryDate() {
 
         return expiryDate;
