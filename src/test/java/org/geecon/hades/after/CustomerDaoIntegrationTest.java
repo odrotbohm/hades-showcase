@@ -39,5 +39,16 @@ public class CustomerDaoIntegrationTest extends GeeConHadesTest {
                 repository.findByLastname("Matthews", new PageRequest(0, 2));
 
         assertThat(customers.asList().size(), is(2));
+        assertFalse(customers.hasPreviousPage());
+    }
+
+
+    @Test
+    public void findsCustomerById() throws Exception {
+
+        Customer customer = repository.readByPrimaryKey(2L);
+
+        assertThat(customer.getFirstname(), is("Carter"));
+        assertThat(customer.getLastname(), is("Beauford"));
     }
 }

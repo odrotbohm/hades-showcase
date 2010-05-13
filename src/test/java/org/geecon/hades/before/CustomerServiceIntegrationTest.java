@@ -31,10 +31,20 @@ public class CustomerServiceIntegrationTest extends GeeConHadesTest {
 
 
     @Test
-    public void testname() throws Exception {
+    public void findsPageOfMatthews() throws Exception {
 
         List<Customer> customers = repository.findByLastname("Matthews", 0, 2);
 
         assertThat(customers.size(), is(2));
+    }
+
+
+    @Test
+    public void findsCustomerById() throws Exception {
+
+        Customer customer = repository.findById(2L);
+
+        assertThat(customer.getFirstname(), is("Carter"));
+        assertThat(customer.getLastname(), is("Beauford"));
     }
 }
