@@ -73,4 +73,13 @@
       </plugin>
     </plugins>
   </build>
+
+  <repositories>
+    <repository>
+      <id>repo.synyx.de</id>
+      <name>Synyx Maven2 Repository</name>
+      <url>http://repo.synyx.org</url>
+    </repository>
+  </repositories>
+  
 </project>
