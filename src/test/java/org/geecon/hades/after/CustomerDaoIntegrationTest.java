@@ -33,7 +33,7 @@ public class CustomerDaoIntegrationTest extends GeeConHadesTest {
 
 
     @Test
-    public void testname() throws Exception {
+    public void findsFirstPageOfMatthews() throws Exception {
 
         Page<Customer> customers =
                 repository.findByLastname("Matthews", new PageRequest(0, 2));

@@ -25,10 +25,9 @@ public class AccountDaoIntegrationTest extends GeeConHadesTest {
 
 
     @Test
-    public void testname() throws Exception {
+    public void findsCustomersAccounts() throws Exception {
 
         Customer customer = customerDao.readByPrimaryKey(1L);
-
         List<Account> accounts = accountDao.findByCustomer(customer);
 
         assertFalse(accounts.isEmpty());
