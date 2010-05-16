@@ -1,10 +1,11 @@
 package org.geecon.hades.after;
 
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 import java.util.List;
 
+import org.geecon.hades.after.CustomerDao;
 import org.geecon.hades.core.Customer;
 import org.geecon.hades.core.GeeConHadesTest;
 import org.junit.Test;
