@@ -1,10 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.geecon.hades</groupId>
-    <artifactId>org.geecon.hades</artifactId>
+    <groupId>org.synyx.hades</groupId>
+    <artifactId>org.synyx.hades.showcase</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>GeeCON Hades Sample</name>
+    <name>Hades showcase</name>
+    <description>Sample project showing how Hades eases JPA repository development</description>
+    <url>http://hades.synyx.org</url>
+    <inceptionYear>2010</inceptionYear>
+    <developers>
+        <developer>
+            <id>gierke</id>
+            <name>Oliver Gierke</name>
+            <email>ogierke@vmware.com</email>
+            <url>http://www.olivergierke.de</url>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>org.synyx.hades</groupId>

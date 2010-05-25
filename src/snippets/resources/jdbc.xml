@@ -1,4 +1,4 @@
-<bean id="accountDaoImpl" class="org.geecon.hades.after.AccountDaoJdbcImpl">
+<bean id="accountDaoImpl" class="org.synyx.hades.showcase.after.AccountDaoJdbcImpl">
     <property name="jdbcTemplate">
         <bean class="org.springframework.jdbc.core.JdbcTemplate">
             <property name="dataSource" ref="dataSource" />
