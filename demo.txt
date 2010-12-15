@@ -3,6 +3,7 @@
 - Project structure
 - Spring configuration
 - Services
+- Test cases
 
 2. Issues
 ---------
@@ -18,18 +19,20 @@
 4. Explain general proxy mechanism, GenericJpaDao
 -------------------------------------------------
 - show GenericDao interface
-- readAll(Pageable pageble) -> replace findByLastname(Pageable pageable)
+- readAll(Pageable pageble) 
 
 5. AccountRepository
 --------------------
 - replace saven(…)
-- findByCustomer
+- findByCustomer -> show log -> method created from method name
 - explain proxy mechanism, methods signature possibilities (@Param, return types, Pageable, Sort)
+- -> replace findByLastname(Pageable pageable) in CustomerService
 
 6. First summary
 ----------------
 - implementation got obsolete
 - switch to after package
+-- alter packages to .after, remove component scan element
 
 7. Custom implementation
 ------------------------
@@ -49,10 +52,4 @@
 -----------------------
 - show auditing test from Hades sample project
 
-10. Summary
------------
-- CRUD, Queries, Pagination, Sorting,
-- Custom implementation
-- Domain base classes
-- Eclipse plugin, Roo addon
-- Roadmap, license
+10. Back to slide deck

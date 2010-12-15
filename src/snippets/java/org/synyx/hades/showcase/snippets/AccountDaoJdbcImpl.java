@@ -1,7 +1,6 @@
 package org.synyx.hades.showcase.snippets;
 
 import org.joda.time.LocalDate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +11,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 class AccountDaoJdbcImpl implements AccountDaoCustom {
 
-    @Autowired
     private JdbcTemplate template;
 
 

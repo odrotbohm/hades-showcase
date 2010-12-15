@@ -7,9 +7,10 @@ import java.util.List;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.synyx.hades.showcase.before.CustomerService;
-import org.synyx.hades.showcase.core.Customer;
+import org.synyx.hades.domain.Page;
+import org.synyx.hades.domain.PageRequest;
 import org.synyx.hades.showcase.core.AbstractHadesTest;
+import org.synyx.hades.showcase.core.Customer;
 
 
 /**
@@ -34,9 +35,10 @@ public class CustomerServiceIntegrationTest extends AbstractHadesTest {
     @Test
     public void findsPageOfMatthews() throws Exception {
 
-        List<Customer> customers = repository.findByLastname("Matthews", 0, 2);
+        Page<Customer> customers =
+                repository.findByLastname("Matthews", new PageRequest(0, 2));
 
-        assertThat(customers.size(), is(2));
+        assertThat(customers.asList().size(), is(2));
     }
 
 

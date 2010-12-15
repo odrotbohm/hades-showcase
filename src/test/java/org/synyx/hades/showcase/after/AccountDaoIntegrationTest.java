@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
+import org.joda.time.LocalDate;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.synyx.hades.showcase.core.AbstractHadesTest;
@@ -32,5 +33,14 @@ public class AccountDaoIntegrationTest extends AbstractHadesTest {
 
         assertFalse(accounts.isEmpty());
         assertThat(accounts.get(0).getCustomer(), is(customer));
+    }
+
+
+    @Test
+    public void testname() throws Exception {
+
+        accountDao.removedExpiredAccounts(new LocalDate(2011, 1, 1));
+
+        assertThat(accountDao.count(), is(1L));
     }
 }

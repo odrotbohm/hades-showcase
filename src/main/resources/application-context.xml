@@ -9,12 +9,7 @@
 
     <import resource="infrastructure.xml" />
 
-    <context:component-scan base-package="org.synyx.hades.showcase">
-        <context:exclude-filter type="regex" expression=".*snippets.*" />
-    </context:component-scan>
-    
-    <hades:dao-config base-package="org.synyx.hades.showcase">
-        <hades:exclude-filter type="regex" expression=".*snippets.*" />
-    </hades:dao-config>
+    <context:component-scan base-package="org.synyx.hades.showcase.before" />
+    <hades:dao-config base-package="org.synyx.hades.showcase.before" />
 
 </beans>
